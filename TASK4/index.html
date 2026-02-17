@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Enrollment Form</title>
+</head>
+
+<body bgcolor="#E3F2FD">
+
+    <header bgcolor="#1976D2">
+        <center>
+            <h1 style="color:rgb(92, 80, 80);">Online Learning Platform</h1>
+            <p style="color:rgb(183, 121, 121);">Course Enrollment Form</p>
+        </center>
+    </header>
+
+    <hr>
+
+    <main>
+
+        <center>
+            <form>
+
+                <table bgcolor="#FFFFFF" cellpadding="15" cellspacing="5" width="60%">
+
+                    <tr>
+                        <td><b>Full Name:</b></td>
+                        <td>
+                            <input type="text" name="name" placeholder="Enter your name" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><b>Email:</b></td>
+                        <td>
+                            <input type="email" name="email" placeholder="example@gmail.com" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><b>Age:</b></td>
+                        <td>
+                            <input type="number" name="age" min="15" max="60" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><b>Phone Number:</b></td>
+                        <td>
+                            <input type="tel" name="phone" pattern="[0-9]{10}" placeholder="10 Digit Number" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><b>Select Course:</b></td>
+                        <td>
+                            <input list="courses" name="course" required>
+
+                            <datalist id="courses">
+                                <option value="HTML">
+                                <option value="CSS">
+                                <option value="JavaScript">
+                                <option value="Python">
+                                <option value="Java">
+                                <option value="Data Science">
+                            </datalist>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Skill Level:</b></td>
+                        <td>
+                            <input type="range" min="0" max="100" value="50">
+
+                            <br><br>
+
+                            <meter min="0" max="100" value="50"></meter>
+
+                            <p>Beginner → Advanced</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Form Progress:</b></td>
+                        <td>
+                            <progress value="70" max="100"></progress>
+                            <span>70%</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Learning Mode:</b></td>
+                        <td>
+                            <input type="radio" name="mode" required> Online
+                            <input type="radio" name="mode"> Offline
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Agreement:</b></td>
+                        <td>
+                            <input type="checkbox" required>
+                            I accept Terms & Conditions
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="submit" value="Enroll Now">
+
+                            <input type="reset" value="Clear">
+                        </td>
+                    </tr>
+
+                </table>
+
+            </form>
+        </center>
+
+    </main>
+
+    <br><br>
+    <footer bgcolor="#1976D2">
+        <center>
+            <p style="color:rgb(216, 187, 187);">
+                ©  Online Learning Platform | All Rights Reserved
+            </p>
+        </center>
+    </footer>
+
+</body>
+</html>
