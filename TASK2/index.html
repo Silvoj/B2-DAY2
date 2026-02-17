@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+</head>
+
+<body bgcolor="#E1F5FE">
+
+    <center>
+        <form action="#" method="post">
+            <fieldset>
+                <legend><b>Student Registration From</b></legend>
+                
+        <p>Please fill all details correctly</p>
+
+        
+            <label for="name">Full Name:</label><br>
+            <input type="text"
+                   id="name"
+                   name="name"
+                   required
+                   placeholder="Enter your name">
+            <br><br>
+            <label for="email">Email Address:</label><br>
+            <input type="email"
+                   id="email"
+                   name="email"
+                   required
+                   placeholder="example@gmail.com">
+            <br><br>
+
+            <label for="phone">Mobile Number:</label><br>
+            <input type="tel"
+                   id="phone"
+                   name="phone"
+                   required
+                   pattern="[6-9]{1}[0-9]{9}"
+                   placeholder="10-digit mobile number">
+            <br>
+            <small>(Starts with 6-9 and contains 10 digits)</small>
+            <br><br>
+
+            <label for="age">Age:</label><br>
+            <input type="number"
+                   id="age"
+                   name="age"
+                   required
+                   min="15"
+                   max="60"
+                   placeholder="Enter age">
+            <br>
+            <small>(Age between 15 and 60)</small>
+            <br><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date"
+                   id="dob"
+                   name="dob"
+                   required>
+            <br><br>
+
+            
+            <input type="submit" value="Register">
+
+            <input type="reset" value="Clear">
+        </fieldset>
+        </form>
+
+    </center>
+
+</body>
+</html>
