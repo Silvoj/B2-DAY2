@@ -2,66 +2,112 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Product Features</title>
+    <title>Responsive Blog Layout</title>
 
     <style>
         body {
-            font-family: "Segoe UI", Tahoma, sans-serif;
-            background-color: #8bcabe;
             margin: 0;
-            padding: 0;
-        }
-        .feature-section {
-            width: 70%;
-            margin: 60px auto;
-            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #8b9eb9;
+            color: #333;
         }
 
-        .feature-section h2 {
-            font-size: 28px;
-            color: #222;
-            margin-bottom: 30px;
+        header {
+            background-color: #a25a7b;
+            color: white;
+            padding: 20px;
+            text-align: center;
             letter-spacing: 1px;
         }
-
-        .feature-list {
-            list-style-type: none;
-            padding: 0;
+        .blog-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 30px;
+            justify-content: center;
         }
 
-        .feature-list li {
+        .blog-card {
             background-color: #ffffff;
-            color: #333;
-            font-size: 16px;
-            margin: 12px 0;
-            padding: 15px;
-            border: 2px solid #ddd;
-            border-radius: 8px;
-            transition: all 0.3s ease;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 20px;
+            flex: 1 1 30%;
+            box-sizing: border-box;
+            min-width: 280px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .feature-list li:hover {
-            background-color: #007bff;
-            color: #ffffff;
-            border-color: #0056b3;
-            transform: translateX(5px);
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
+
+        .blog-card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        .blog-card p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .blog-card button {
+            padding: 10px 16px;
+            font-size: 14px;
+            font-weight: bold;
+            border: none;
+            background-color: #5ae3c3;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .blog-card button:hover {
+            background-color: #031b33;
+        }
+
+        
     </style>
-
 </head>
+
 <body>
 
-    <section class="feature-section">
-        <h2>Product Features</h2>
+    <header>
+        <h1>My Tech Blog</h1>
+        <p>Latest articles & insights</p>
+    </header>
 
-        <ul class="feature-list">
-            <li>Fast and Reliable Performance</li>
-            <li>User-Friendly Interface</li>
-            <li>Secure Data Protection</li>
-            <li>Cross-Platform Compatibility</li>
-            <li>24/7 Customer Support</li>
-        </ul>
-    </section>
+    <main class="blog-container">
+        <div class="blog-card">
+            <h3>Understanding Flexbox</h3>
+            <p>Learn how Flexbox helps you design responsive layouts easily and efficiently.</p>
+            <button>Read More</button>
+        </div>
+
+        <div class="blog-card">
+            <h3>CSS Grid Basics</h3>
+            <p>A beginner-friendly guide to building modern layouts using CSS Grid.</p>
+            <button>Read More</button>
+        </div>
+
+        <div class="blog-card">
+            <h3>Responsive Design Tips</h3>
+            <p>Best practices to make your websites look great on all screen sizes.</p>
+            <button>Read More</button>
+        </div>
+
+        <div class="blog-card">
+            <h3>Web Performance</h3>
+            <p>Simple techniques to improve page speed and user experience.</p>
+            <button>Read More</button>
+        </div>
+    </main>
 
 </body>
 </html>
